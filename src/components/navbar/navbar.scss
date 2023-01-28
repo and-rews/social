@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 20px;
     height: 50px;
     border-bottom: 1px solid themed("border");
     position: sticky;
@@ -36,9 +36,16 @@
         input {
           border: none;
           width: 500px;
-          padding: 0.2rem;
           background-color: transparent;
           color: themed("textColor");
+
+          @include mobile {
+            display: none;
+          }
+
+          @include tablet {
+            width: 200px;
+          }
         }
       }
     }
@@ -48,17 +55,28 @@
       align-items: center;
       gap: 20px;
 
+      @include mobile {
+        display: none;
+      }
+
       .user {
         display: flex;
         align-items: center;
         gap: 10px;
         font-weight: 500;
 
+        @include tablet {
+          display: none;
+        }
+
         img {
-          height: 30px;
           width: 30px;
+          height: 30px;
           border-radius: 50%;
           object-fit: cover;
+        }
+
+        span {
         }
       }
     }

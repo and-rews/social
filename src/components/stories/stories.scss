@@ -1,14 +1,34 @@
+@import "../../styles.scss";
+
 .stories {
   display: flex;
   gap: 10px;
   height: 150px;
   margin-bottom: 30px;
 
+  @include mobile {
+    height: 50px;
+    margin-bottom: 0px !important;
+    justify-content: space-between;
+  }
+
+  @include tablet {
+    height: 150px;
+    gap: 20px;
+  }
+
   .story {
     flex: 1;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+
+    @include mobile {
+      flex: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
 
     img {
       height: 100%;
@@ -24,6 +44,10 @@
       font-size: 10px;
       font-weight: 500;
       text-shadow: 2px 2px #000;
+
+      @include mobile {
+        display: none;
+      }
     }
 
     button {
@@ -41,6 +65,14 @@
       border-radius: 50%;
       cursor: pointer;
       font-size: 24px;
+
+      @include mobile {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
     }
   }
 }
