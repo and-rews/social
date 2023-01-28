@@ -7,7 +7,7 @@ const Posts = () => {
   const posts = [
     {
       id: 1,
-      name: "Andrews Osei",
+      name: "Andrews 😎😣",
       userId: 1,
       profilePic:
         "https://scontent.facc6-1.fna.fbcdn.net/v/t39.30808-6/294043662_774899340203303_4556735505334631743_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeH5qX23rkKDkntfnxNu5q3yoWMiquseR2OhYyKq6x5HY8fPW10aStOPulCnqXNWlsq9V3DcHKT1qnedpOD1hn7x&_nc_ohc=D4Xc5KH5v4wAX9BW2C5&_nc_zt=23&_nc_ht=scontent.facc6-1.fna&oh=00_AfCaVDy2pgxIrbtSN8KMk0xGuQtVr5T7RgscgvyQ_f-zpw&oe=63D7598F",
